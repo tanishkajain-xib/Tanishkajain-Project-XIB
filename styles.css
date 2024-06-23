@@ -124,7 +124,7 @@ header {
     height: 500px; /* Adjust height as needed */
     overflow: hidden;
     display: flex;
-    align-items: center;
+    align-items: flex-end; /* Align items to the bottom */
     justify-content: center;
 }
 
@@ -142,14 +142,15 @@ video {
 
 .overlay {
     position: relative;
-    z-index: 1;
+    width: 100%;
     text-align: center;
     color: white;
+    padding: 10px;   
+    z-index: 1;
 }
 
 .overlay h1, .overlay p {
     margin: 0;
-    padding: 10px;
 }
 
 .container {
